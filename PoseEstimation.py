@@ -86,7 +86,7 @@ while True:
             if id == 32 or id == 31:
                 cx1, cy1 = int(lm.x * w), int(lm.y * h)
                 cv2.circle(img, (cx1, cy1), 10, (255, 0, 0), cv2.FILLED)
-                d = ((cx2 - cx1) ** 2 + (cx2 - cy1) ** 2) ** 0.5
+                d = ((cx2 - cx1) ** 2 + (cy2 - cy1) ** 2) ** 0.5
                 di = round(d * 0.5)
                 print(di)
                 pygame.mixer.init()
